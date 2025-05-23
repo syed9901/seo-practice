@@ -2,96 +2,151 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Digital Marketing Portfolio of Syed Maaz" />
-  <meta name="keywords" content="Digital Marketing, SEO, Social Media, Maaz Portfolio" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Syed Maaz - Digital Marketer, SEO Specialist, and Content Creator" />
+  <meta name="keywords" content="Digital Marketing, SEO, Social Media, Portfolio, Syed Maaz" />
   <meta name="author" content="Syed Maaz" />
-  <title>Welcome | Syed Maaz</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet">
+  <title>Syed Maaz | Digital Marketer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+    body {
       font-family: 'Inter', sans-serif;
-      background-color: #f4f6f8;
+      background: #f7f9fc;
       color: #333;
     }
     header {
-      background-color: #ffffff;
-      padding: 60px 20px;
+      background: linear-gradient(to right, #1a73e8, #4285f4);
+      color: white;
+      padding: 80px 20px;
       text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      color: #2c3e50;
-      margin: 0;
+      font-size: 3.2rem;
+      margin-bottom: 10px;
     }
     header p {
       font-size: 1.2rem;
-      color: #555;
+      color: #e0e0e0;
     }
-    main {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
+    nav {
+      background-color: #ffffff;
+      padding: 10px 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #1a73e8;
     }
     section {
-      margin-bottom: 40px;
+      max-width: 960px;
+      margin: 60px auto;
+      padding: 0 20px;
     }
     h2 {
+      font-size: 2rem;
       color: #1a73e8;
-      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .about p, .skills ul, .contact p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #555;
+    }
+    .skills ul {
+      list-style: square;
+      margin-left: 20px;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #1a73e8;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background: #1558c0;
     }
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #ffffff;
-      color: #888;
+      background: #fff;
       border-top: 1px solid #ddd;
-      font-size: 0.9rem;
+      color: #999;
     }
-    a {
-      color: #1a73e8;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+      }
     }
   </style>
 </head>
 <body>
 
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
   <header>
-    <h1>Hey, I'm Syed Maaz</h1>
-    <p>Aspiring Digital Marketer | SEO Learner | Content Creator</p>
+    <h1>Hi, I'm Syed Maaz</h1>
+    <p>Digital Marketer | SEO Enthusiast | Growth Hacker</p>
+    <a href="#contact" class="button">Hire Me</a>
   </header>
 
-  <main>
-    <section>
-      <h2>👋 Welcome</h2>
-      <p>Thank you for visiting my portfolio site. I'm passionate about digital marketing, especially SEO and content strategy. This site is my playground to practice, experiment, and grow professionally.</p>
-    </section>
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I'm passionate about helping brands grow through SEO and data-driven digital marketing. This is my personal project to showcase my learning, practice manual SEO, and build a strong portfolio for future roles in the marketing industry.</p>
+  </section>
 
-    <section>
-      <h2>💼 What I Do</h2>
-      <ul>
-        <li>SEO On-page & Off-page Optimization</li>
-        <li>Social Media Content Planning</li>
-        <li>Blogging and Keyword Research</li>
-        <li>Learning HTML, CSS & Manual SEO</li>
-      </ul>
-    </section>
+  <section id="skills" class="skills">
+    <h2>Skills & Tools</h2>
+    <ul>
+      <li>SEO (On-Page, Off-Page, Technical)</li>
+      <li>Keyword Research & Blogging</li>
+      <li>Social Media Strategy</li>
+      <li>WordPress & HTML/CSS</li>
+      <li>Canva, Google Analytics, Search Console</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>📬 Let's Connect</h2>
-      <p>Feel free to <a href="mailto:youremail@example.com">email me</a> or connect on <a href="https://www.linkedin.com/">LinkedIn</a>.</p>
-    </section>
-  </main>
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/">linkedin.com/in/yourprofile</a></p>
+    <p>GitHub: <a href="https://github.com/">github.com/yourusername</a></p>
+  </section>
 
   <footer>
-    © 2025 Syed Maaz. All rights reserved.
+    © 2025 Syed Maaz. Built with ❤️ and HTML.
   </footer>
 
 </body>
